@@ -21,16 +21,16 @@ el comando de sequelize "db:create"
  - Dentro de la carpeta config modificamos config.json 
 
 3. Crear una base de datos con el comando 
-    ```
+    ```console
     npx sequelize db:create
     ```
 4. Eliminar una base de datos 
-    ```
+    ```console
     npx sequelize db:drop
     ```
 5. Como mover las carpetas dentro de /src 
     - creamos un archivo .sequelizerc
-    ```
+    ```js
     const path = require('path');
 
     module.exports = {
@@ -42,13 +42,13 @@ el comando de sequelize "db:create"
     ``` 
 6. Crear un modelo
     En la terminar usamos en comando 
-    ```
+    ```console
     npx sequelize-cli model:generate ...
     ```
     -- name (nombre del modelo )
     -- name User
     -- attributes attr1:type,attr2:type,...,attrN:type
-    ```shell
+    ```console
     npx sequelize-cli --name User model:generate --attributes username:string,email:string,password:string
     ```
 
