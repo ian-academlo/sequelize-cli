@@ -48,7 +48,7 @@ el comando de sequelize "db:create"
     -- name (nombre del modelo )
     -- name User
     -- attributes attr1:type,attr2:type,...,attrN:type
-    ```
+    ```shell
     npx sequelize-cli --name User model:generate --attributes username:string,email:string,password:string
     ```
 
